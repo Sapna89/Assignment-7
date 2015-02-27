@@ -1,0 +1,85 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+}
+
+.search-bar {
+	width: 400px;
+	margin: 35px auto;
+}
+
+.search-bar input {
+	text-align: center;
+	width: 400px;
+	height: 75px;
+	font-size: 40px;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+#results {
+	background-color: #D3D3D3;
+	color: #000000;
+	width: 380px;
+	margin: 0 auto;
+	padding-left: 20px;
+	border-radius: 5px;
+}
+
+.results {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.movie {
+	width: 300px;
+	height: 500px;
+	margin-bottom: 25px;
+	background-size: cover;
+	background-position: center center;
+	margin: auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.movie:hover .sub-menu, .movie:hover .sub-menu-background {
+	transition: all 1s;
+	bottom: 0;
+}
+
+.sub-menu-background {
+	background-color: black;
+	opacity: .5;
+	z-index: 10;
+}
+
+.sub-menu, .sub-menu-background {
+	transition: all 1s;
+	position: absolute;
+	bottom: -100px;
+	left: 0;
+	width: 270px;
+	padding: 15px;
+	height: 70px;
+}
+
+.sub-menu {
+	background-color: transparent;
+	z-index: 100;
+}
+
+.sub-menu div {
+	color: white;
+	font-size: 15px;
+}
+
+.title {
+	font-size: 25px;
+}
